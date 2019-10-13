@@ -22,7 +22,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-
 }
 
 
@@ -43,7 +42,7 @@ header{
 	top:0;
 	left:0;
 	z-index:1000;
-  background: #a3a3a3;
+  background: #999999;
 }
 
 
@@ -55,7 +54,6 @@ header.fixed{
 	top:0;
 	left:0;
 	z-index:1000;
-
 }
 
 
@@ -76,27 +74,12 @@ header.fixed{
 
 .mainHeader{
 	width:100%;
-  background: #cccccc !important;
+  background: #2D2D2D !important;
 }
 
 .logo{
 	 margin: 20px 0;
 }
-
-
-.logo h1 {
-    display: inline-block;
-    font-size: 17px;
-    text-transform: uppercase;
-	color:#ffffff;
-	position:relative;
-
-}
-
-.switchedHeader .logo h1{
-	color: #242424;
-}
-
 
 
 nav#mainNav{
@@ -128,6 +111,10 @@ nav#mainNav li a{
 
 }
 
+.fab {
+  font-size: 40px;
+  color: #ffffff;
+}
 
 
 .mobileBtn {
@@ -146,7 +133,6 @@ nav#mainNav li a{
 
 .switchedHeader nav#mainNav li a.active:after {
     color: #999999;
-    content: ".";
     font-size: 13px;
     margin-right: 10px;
     position: absolute;
@@ -267,6 +253,7 @@ nav#mainNav li a{
 
 .bigTitle h1{
 	border-top:1px solid #efefef;
+  font-family: 'Open Sans', sans-serif;
 	border-bottom:1px solid #efefef;
 	color:#efefef;
 	text-transform:uppercase;
@@ -275,21 +262,6 @@ nav#mainNav li a{
 	padding-bottom:44px;
 
 }
-
-
-
-.wwdContent{
-	background: url(../images/parallaxBg/parallax1.jpg);
-	background-attachment: fixed;
-	background-position: center top;
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-height: 380px;
-	background-color:#fafafa;
-	margin-top:65px;
-	position:relative;
-}
-
 
 .wwdContent:before{
     background: rgba(255, 192, 0, .95);
@@ -427,23 +399,6 @@ nav#mainNav li a{
     margin-left: 17px;
     width:230px;
 }
-
-
-.facts{
-	background: url(../images/parallaxBg/parallax2.jpg);
-	background-attachment: fixed;
-	background-position: center top;
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-height: 380px;
-	background-color:#fafafa;
-	margin-top:65px;
-	position:relative;
-	color:#ffffff;
-	padding-bottom: 80px;
-    padding-top: 130px;
-}
-
 
 .facts:before{
     background: rgba(45, 45, 45, 0.3);
@@ -673,20 +628,6 @@ nav#mainNav li a{
 }
 
 
-.thumbs li a span {
-    background-color:rgba(255, 192, 0, 0.9);
-	background-image: url(../images/quote.png);
-    background-position: 50% center;
-    background-repeat: no-repeat;
-	background-size: 15px 15px;
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
 .tactive span {
     opacity: 1 !important;
 }
@@ -794,6 +735,7 @@ ul#category li a {
 	 display:block;
 	 position: relative;
 	 width:25%;
+   height: 25%;
 	 float:left;
 }
 
@@ -1414,20 +1356,20 @@ a.launch {
 }
 
 .ctFormHolder{
-	background: url(../images/parallaxBg/parallax3.jpg);
+	background: url(../images/sunset.jpg);
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: repeat-y;
 	background-size: cover;
 	min-height: 580px;
-	background-color:#fafafa;
+	background-color:#585858;
 	margin-top:65px;
 }
 
 
 
 .overlay{
-    background: rgba(36, 36, 36, 0.9);
+  background: rgba(147, 86, 124, 0.8);
 	min-height: 580px;
 	padding-bottom: 80px;
 	padding-top: 100px;
@@ -1718,7 +1660,7 @@ a.launch {
 	.mainSlider .flex-control-nav {opacity:1 !important;bottom: 50px !important;}
 	.projectSlider .flex-control-nav {opacity:1 !important;bottom: 20px !important;}
 	.postSlider .flex-control-nav {opacity:1 !important;bottom: 15px !important;}
-	.mainHeader{background-color: #cccccc !important;}
+	.mainHeader{background-color: #2D2D2D !important;}
 	.logo h1{color: #242424;}
 	.logo h1 span{color:#d0a068 ;}
 	.logo, nav#mainNav{float:none;}
@@ -1727,7 +1669,7 @@ a.launch {
 	nav#mainNav li{float:none; display:block;}
 
 	.topSocials{display:none;}
-	nav#mainNav li a{padding:3px 0px;display:inline-block;color:#999999;}
+	nav#mainNav li a{padding:3px 0px;display:inline-block;color:#93567c;}
 	.mobileBtn{display: inline-block;float: right;margin-right: 2px;margin-top: -51px;position: relative;}
 
 	.caption h1{font-size:25px;}
