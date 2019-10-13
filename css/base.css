@@ -1,0 +1,270 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Buttons
+	#Radius
+	#Browser Fix
+	#Misc
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing :border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	
+}
+
+
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; 
+		text-decoration:none;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+*::-moz-selection {
+    background: #111111;
+    color: #ffffff;
+}
+
+a:focus {
+outline: 0;
+}
+
+iframe{width:100%;frameborder:0;}
+
+
+
+	
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #ffffff;
+		font: 13px/21px "open_sansregular", Arial, sans-serif;
+		color: #999;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		-webkit-text-stroke: 0.30px;
+ }
+
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+	font-weight: normal; }
+	p{line-height:25px;}
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+	
+	
+	
+	.mainTitle {
+		margin-bottom:30px;
+	}
+
+	.mainTitle h1{
+		font-family: 'open_sansbold';
+		font-size:19px;
+		text-transform:uppercase;
+		color:#242424;
+	}
+
+
+	.icon i {
+		margin-top:10px;
+		display:inline-block;
+		color:#2d2d2d;
+		font-size:25px;
+		background:#ffffff;
+
+
+
+	}
+
+	.icon:after{
+	  	background:#ffc000;
+	    content: "";
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	    top: -16px;
+	    width: 85px;
+	    z-index: -1;
+		height:2px;
+	}
+	
+	
+	
+	.logo h1, .planPrice h1{
+		font-family: 'open_sansextrabold', Arial, sans-serif;
+	}
+	
+	nav#mainNav li,.mainTitle h1, .bigTitle h1, .expertise h2, .teamSingle h3 , .srvDet h3, .planName h3, .planBody li span
+	,.plan .btn a, .testiDetails .td h3, .itemDesc h3, h1.projTitle, .tagsSingle h4 , .comments h2, .respond h2, .widget h2,
+	.brand {
+		font-family: 'open_sansbold', Arial, sans-serif;
+	}
+	
+	
+	ul#category li a, .singleDetails h1, a.launch, .allWorks a, .postDetails h1, .postTitle h1, .allPosts a,
+	.postContent .more a,  .replyForm #submit, .tagsList li a , .contactForm #submit{
+		font-family: 'open_sanssemibold', Arial, sans-serif;
+	}
+	
+	
+	.caption p, .teamSingle h3 span, .fc, .planPrice h1 span, .testiDetails .td h3 span, .itemDesc span ,
+	h1.projTitle span, .postCount.short h3, .postMeta, .postSingle blockquote{
+		font-family: 'open_sanslight_italic', Arial, sans-serif;
+	}
+	
+	
+	.introText, .replyForm textarea, .replyForm input[type="text"], .replyForm textarea, .contactForm input[type="text"], 
+	.contactForm textarea{
+		font-family: 'open_sanslight', Arial, sans-serif;
+	}
+	
+	
+	.comments .reply-btn a, .postDetails .more a{
+		font-family: 'open_sanssemibold_italic', Arial, sans-serif;
+	}
+	
+	
+
+
+
+
+
+
+/* #Links
+================================================== */
+	
+	a,.errorForm, .contactForm #submit,.tactive span, .pagination ul li span, .replyForm #submit  {
+		
+		transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out 0s;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		
+	}
+	
+	
+
+
+
+/* #Buttons
+================================================== */	
+
+	ul#category li a, a.btn, .replyForm #submit{
+		border: 1px solid #242424;
+		color: #242424;
+		padding: 8px 18px;
+	}
+	
+	
+	a.btn:hover, .pagination ul li a:hover, .pagination ul li span:hover, .replyForm #submit:hover, .tagsList li a:hover,
+	ul#category li a:hover, .projSocials li a:hover, .projNav li a:hover{
+		color: #ffffff;
+		background:#242424;
+	}
+
+	
+
+
+
+/* #Radius
+================================================== */	
+	
+	.testiQuote i,.comments .img, .info .ico i, .tImg img, .tImg, .socialsFooter a {
+	    border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+}
+
+
+	
+
+
+
+
+/* #Browser Fix
+================================================== */
+		
+		.socialsFooter a, .fct i, .item a .desc , .clt p i,
+		.searchForm input[type="text"],.pagination ul li , .contactForm input[type="text"], .contactForm textarea, 
+		.replyForm input[type="text"], .replyForm textarea, .comments .img, .blogLatest .postMedia, .blogLatest .postDetails, .facts, .bigTitle h1, .bigTitle
+		, .itemBtn a, .projSocials li a, .projNav li a {
+		    box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+		}
+
+
+
+
+
+
+
+/* #Misc
+================================================== */
+	.ofsBottom{margin-bottom:80px;}
+	.tCenter {text-align: center;}
+	.ofsTop{padding-top:80px;}
+	.ofsInTop{padding-top:60px;}
+	.ofsInBottom{padding-bottom:60px;}
+	.ofsTSmall{padding-top:20px;} 
+	.ofsBSmall{padding-bottom:40px;}
+	.singleOffset{margin-top:200px;}
+	.blogSingle.singleOffset {margin-top: 150px;}
+	.bgGrey{background:#f3f3f3;}
+
+
