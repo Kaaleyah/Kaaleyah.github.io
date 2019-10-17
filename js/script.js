@@ -32,10 +32,6 @@ $('a.scroll').smoothScroll({
         offset: -63
 });
 
-
-
-
-
 //-------------Highlight the current section in the navigation bar------------//
 	var sections = $("section");
 		var navigation_links = $("nav#mainNav a");
@@ -54,9 +50,6 @@ $('a.scroll').smoothScroll({
 			},
 			offset: '35%'
 		});
-
-
-
 
 //------------------------------------- End navigation setup ------------------------------------------------//
 
@@ -110,41 +103,6 @@ $(".ctFormHolder").parallax("100%", 0.1);
 //---------------------------------- End parallax -----------------------------------------//
 
 
-
-//---------------------------------- Team hover -----------------------------------------//
-
-
-$(".thumbs li a span").css({ opacity: 0 });
-
-$('.thumbs li a ').hover( function(){
-	$(this).children('span ').stop().animate({ opacity: 1 }, 'slow');
-	}, function(){
-	$(this).children('span ').stop().animate({ opacity: 0 }, 'slow');
-});
-
-
-$('.testiThumbs').each(function () {
-	    $('.testiThumbs li a').on('click', function(event){
-			event.preventDefault();
-		});
-
-		$('.testiThumbs li a' ).hover(function() {
-			if($('.testiThumbs li a' ).hasClass('tactive')){
-				$('.thumbs li a span').stop().animate({ opacity: 0 }, 'slow');
-				$('.testiThumbs li a').removeClass('tactive');
-			}
-
-			$(this).addClass('tactive');
-			$('.testiDetails .td').hide();
-			$($(this).attr('href')).show();
-	});
-
-});
-
-
-//---------------------------------- End team hover-----------------------------------------//
-
-
 //---------------------------------- Site slider-----------------------------------------//
 
 
@@ -160,9 +118,9 @@ $('.clientSlider').flexslider({
 	slideshow: true,
 	directionNav:false,
  	itemWidth: 53,
-    itemMargin: 0,
-    minItems: 2,
-    maxItems: 6,
+  itemMargin: 0,
+  minItems: 2,
+  maxItems: 6,
 	controlNav: false
 });
 
@@ -175,7 +133,7 @@ $('.postSlider, .postSliderLarge').flexslider({
 
 
 $('.projectSlider').flexslider({
-   	animation: "slide",
+   animation: "slide",
 	slideshow: true,
 	directionNav:false,
 	controlNav: true
@@ -195,7 +153,7 @@ $(".itemDesc").css({ opacity: 0 });
 
 
 $('.itemDesc').hover( function(){
-	$(this).stop().animate({ opacity: 1 }, 'slow');
+	$(this).stop().animate({ opacity: 0.85 }, 'slow');
 }, function(){
 	$(this).stop().animate({ opacity: 0 }, 'slow');
 });
@@ -270,89 +228,7 @@ $('.itemDesc').hover( function(){
 //--------------------------------- End sorting portfolio elements with quicksand plugin--------------------------------//
 
 
-//---------------------------------- End portfolio-----------------------------------------//
-
-
-
-$('.facts').appear(function() {
-	$(".timer .count").each(function() {
-	var counter = $(this).html();
-	$(this).countTo({
-		from: 0,
-		to: counter,
-		speed: 2000,
-		refreshInterval: 10,
-		});
-	});
-});
-
-
-//---------------------------------- Form validation-----------------------------------------//
-
-
-
-
-$('#submit').click(function(){
-
-	$('input#name').removeClass("errorForm");
-	$('textarea#message').removeClass("errorForm");
-	$('input#email').removeClass("errorForm");
-
-	var error = false;
-	var name = $('input#name').val();
-	if(name == "" || name == " ") {
-		error = true;
-		$('input#name').addClass("errorForm");
-	}
-
-
-		var msg = $('textarea#message').val();
-		if(msg == "" || msg == " ") {
-			error = true;
-			$('textarea#message').addClass("errorForm");
-
-		}
-
-	var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
-	var email = $('input#email').val();
-	if (email == "" || email == " ") {
-		$('input#email').addClass("errorForm");
-		error = true;
-	}else if (!email_compare.test(email)) {
-		$('input#email').addClass("errorForm");
-		error = true;
-	}
-
-	if(error == true) {
-		return false;
-	}
-
-	var data_string = $('.contactForm form, .replyForm form').serialize();
-
-
-	$.ajax({
-		type: "POST",
-		url: $('.contactForm form, .replyForm form').attr('action'),
-		data: data_string,
-
-		success: function(message) {
-				if(message == 'SENDING'){
-					$('#success').fadeIn('slow');
-				}
-				else{
-					$('#error').fadeIn('slow');
-				}
-					}
-
-	});
-
-	return false;
-});
-
-
-
-//---------------------------------- End form validation-----------------------------------------//
-
+//---------------------------------- End portfolio-----------------------------------------/
 
 
 //--------------------------------- Mobile menu --------------------------------//
